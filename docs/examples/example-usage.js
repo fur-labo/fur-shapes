@@ -1,0 +1,1 @@
+var furShapes = require('fur-shapes');
