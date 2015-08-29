@@ -11,10 +11,6 @@ module.exports = cozTmpl.indexJsBud({
     module: pkg.name,
     description: pkg.description,
     dirname: __dirname,
-    subclasses:[
-        'Shape',
-        '*Shape'
-    ]
 });
 
 if (!module.parnet) {

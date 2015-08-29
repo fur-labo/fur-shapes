@@ -1,0 +1,22 @@
+/**
+ * Bud file for themes.
+ */
+
+"use strict";
+
+var themes = require('./.themes.json');
+
+module.exports = themes.map(function (theme) {
+    return {
+        force: false,
+        mode: '644',
+        path: theme + '.js',
+        data: {
+            theme:theme
+        }
+    }
+});
+
+if (!module.parent) {
+    require('coz').render(__filename);
+}
