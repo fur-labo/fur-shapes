@@ -13,6 +13,6 @@ module.exports = cozTmpl.indexJsBud({
     dirname: __dirname
 });
 
-if (!module.parnet) {
+if (!module.parent) {
     require('coz').render(__filename);
 }
