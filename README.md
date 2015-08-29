@@ -62,9 +62,38 @@ Usage
 ----
 
 ```javascript
-var furShapes = require('fur-shapes');
+var furShapes = require('fur-shapes'),
+    fs = require('fs');
+
+
+var themeA = furShapes.a(256, 215, '#38E'),
+    themeB = furShapes.b(512, 256, '#E00');
+
+
+fs.writeFileSync('shape-01.svg', themeA);
+fs.writeFileSync('shape-02.svg', themeB);
 ```
 <!-- Section from "docs/readme/02.Usage.md.hbs" End -->
+
+<!-- Section from "docs/readme/03.Examples.md.hbs" Start -->
+
+<a name="section-docs-readme-03-examples-md"></a>
+Examples
+--------
+
+| Theme | Image | Signature |
+| ----- | ----- | --------- |
+| **a** | <img src="./docs/examples/images/example-shape-a.png" height="40"> | `.a(256,256, #38E)` |
+| **b** | <img src="./docs/examples/images/example-shape-b.png" height="40"> | `.a(256,256, #38E)` |
+| **c** | <img src="./docs/examples/images/example-shape-c.png" height="40"> | `.a(256,256, #38E)` |
+| **d** | <img src="./docs/examples/images/example-shape-d.png" height="40"> | `.a(256,256, #38E)` |
+| **e** | <img src="./docs/examples/images/example-shape-e.png" height="40"> | `.a(256,256, #38E)` |
+| **f** | <img src="./docs/examples/images/example-shape-f.png" height="40"> | `.a(256,256, #38E)` |
+| **g** | <img src="./docs/examples/images/example-shape-g.png" height="40"> | `.a(256,256, #38E)` |
+| **h** | <img src="./docs/examples/images/example-shape-h.png" height="40"> | `.a(256,256, #38E)` |
+| **i** | <img src="./docs/examples/images/example-shape-i.png" height="40"> | `.a(256,256, #38E)` |
+
+<!-- Section from "docs/readme/03.Examples.md.hbs" End -->
 
 
 <!-- Sections Start -->

@@ -22,7 +22,15 @@ module.exports = apeTmpl.readmeMdBud({
     },
     links: require('./docs/links.json'),
     overview: 'docs/overview.md',
-    vars: {}
+    vars: {
+        get examples() {
+            return require('./lib/.themes').map(function (theme) {
+                return {
+                    theme: theme
+                };
+            })
+        }
+    }
 });
 
 if (!module.parent) {

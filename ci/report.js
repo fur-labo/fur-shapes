@@ -6,6 +6,7 @@
 
 "use strict";
 
+
 var path = require('path'),
     apeTasking = require('ape-tasking'),
     apeReporting = require('ape-reporting');
@@ -17,8 +18,4 @@ apeTasking.runTasks([
     function (callback) {
         apeReporting.sendToCodeclimate(basedir + '/coverage/lcov.info', callback);
     }
-], function (err) {
-    if (err) {
-        console.error(err);
-    }
-});
+], true);

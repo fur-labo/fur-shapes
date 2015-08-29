@@ -8,7 +8,7 @@ var cozTmpl = require('coz-tmpl');
 
 
 module.exports = cozTmpl.nodeunitTestJsBud({
-    src: __dirname + '/../lib/*.js',
+    src: __dirname + '/../lib/**/*.js',
     dest: __dirname
 });
 
