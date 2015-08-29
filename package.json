@@ -1,6 +1,6 @@
 {
   "name": "fur-shapes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shapes for fur.",
   "main": "lib",
   "scripts": {
@@ -49,6 +49,7 @@
     "mkdirp": "^0.5.1",
     "numcal": "^1.1.0",
     "randomval": "^1.0.2",
-    "stringcase": "^1.2.5"
+    "stringcase": "^1.2.5",
+    "writexml": "^1.1.0"
   }
 }
