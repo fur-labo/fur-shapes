@@ -39,7 +39,7 @@ apeTasking.runTasks([
                     return {
                         src: path.resolve(exampleImageDir, name + '.svg'),
                         dest: path.resolve(exampleImageDir, name + '.png'),
-                        config: {width: 512, height: 256}
+                        size: {width: 512, height: 256}
                     }
                 });
                 svgpng.byConf(config, callback);

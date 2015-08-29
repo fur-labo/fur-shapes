@@ -83,15 +83,15 @@ Examples
 
 | Theme | Image | Signature |
 | ----- | ----- | --------- |
-| **a** | <img src="./docs/examples/images/example-shape-a.png" height="40"> | `.a(256,256, #38E)` |
-| **b** | <img src="./docs/examples/images/example-shape-b.png" height="40"> | `.a(256,256, #38E)` |
-| **c** | <img src="./docs/examples/images/example-shape-c.png" height="40"> | `.a(256,256, #38E)` |
-| **d** | <img src="./docs/examples/images/example-shape-d.png" height="40"> | `.a(256,256, #38E)` |
-| **e** | <img src="./docs/examples/images/example-shape-e.png" height="40"> | `.a(256,256, #38E)` |
-| **f** | <img src="./docs/examples/images/example-shape-f.png" height="40"> | `.a(256,256, #38E)` |
-| **g** | <img src="./docs/examples/images/example-shape-g.png" height="40"> | `.a(256,256, #38E)` |
-| **h** | <img src="./docs/examples/images/example-shape-h.png" height="40"> | `.a(256,256, #38E)` |
-| **i** | <img src="./docs/examples/images/example-shape-i.png" height="40"> | `.a(256,256, #38E)` |
+| **a** | <img src="./docs/examples/images/example-shape-a.png" height="72"> | `.a(256,256, #38E)` |
+| **b** | <img src="./docs/examples/images/example-shape-b.png" height="72"> | `.a(256,256, #38E)` |
+| **c** | <img src="./docs/examples/images/example-shape-c.png" height="72"> | `.a(256,256, #38E)` |
+| **d** | <img src="./docs/examples/images/example-shape-d.png" height="72"> | `.a(256,256, #38E)` |
+| **e** | <img src="./docs/examples/images/example-shape-e.png" height="72"> | `.a(256,256, #38E)` |
+| **f** | <img src="./docs/examples/images/example-shape-f.png" height="72"> | `.a(256,256, #38E)` |
+| **g** | <img src="./docs/examples/images/example-shape-g.png" height="72"> | `.a(256,256, #38E)` |
+| **h** | <img src="./docs/examples/images/example-shape-h.png" height="72"> | `.a(256,256, #38E)` |
+| **i** | <img src="./docs/examples/images/example-shape-i.png" height="72"> | `.a(256,256, #38E)` |
 
 <!-- Section from "docs/readme/03.Examples.md.hbs" End -->
 
