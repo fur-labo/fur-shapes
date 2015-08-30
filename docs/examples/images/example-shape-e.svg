@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="fur-shape-b8818abed16449bc9b09d4d9919c3b74" xmlns="http://www.w3.org/2000/svg" width="512" height="256" viewbox="0 0 512 256">
+<svg id="fur-shape-eb70c56583444ff48ab45f58cd3e4fb2" xmlns="http://www.w3.org/2000/svg" width="512" height="256" viewbox="0 0 512 256">
 	<g>
-		<rect x="0" y="0" rx="51.2" ry="51.2" width="512" height="256" fill="#FFF"/>
+		<rect x="6.4" y="6.4" rx="51.2" ry="51.2" width="499.2" height="243.2" fill="#FFF"/>
 		<rect x="6.4" y="6.4" width="499.2" height="243.2" rx="51.2" ry="51.2" fill="none" stroke-width="12.8" stroke="#38E"/>
 		<rect x="25.6" y="25.6" width="460.8" height="204.8" fill="#38E" rx="40.96000000000001" ry="40.96000000000001"/>
 	</g>
