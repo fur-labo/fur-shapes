@@ -13,8 +13,10 @@ module.exports = {
         pkg: require('./package.json'),
         get examples() {
             return Object.keys(furShapes).map(function (theme) {
+                var shape = furShapes[theme];
                 return {
-                    theme: theme
+                    theme: theme,
+                    reversed: shape.$reversed
                 };
             })
         }
