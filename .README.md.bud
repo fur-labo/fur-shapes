@@ -9,6 +9,8 @@ var apeTmpl = require('ape-tmpl'),
     childProcess = require('child_process'),
     pkg = require('./package.json');
 
+var furShapes = require('./lib');
+
 module.exports = apeTmpl.readmeMdBud({
     pkg: pkg,
     repo: 'fur-repo/' + pkg.name,
@@ -24,7 +26,7 @@ module.exports = apeTmpl.readmeMdBud({
     overview: 'docs/overview.md',
     vars: {
         get examples() {
-            return require('./lib/.themes').map(function (theme) {
+            return Object.keys(furShapes).map(function (theme) {
                 return {
                     theme: theme
                 };

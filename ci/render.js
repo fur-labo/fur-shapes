@@ -11,6 +11,7 @@ var path = require('path'),
     fs = require('fs'),
     apeTasking = require('ape-tasking'),
     expandglob = require('expandglob'),
+    writexml = require('writexml'),
     svgpng = require('svgpng'),
     furShapes = require('../lib');
 
@@ -23,9 +24,9 @@ apeTasking.runTasks([
     function renderSvg(callback) {
         var themes = require('../lib/.themes.json');
         async.eachSeries(themes, function (theme, callback) {
-            var svg = furShapes[theme](512, 256, '#38E');
+            var svg = furShapes[theme](512, 256, '#38E', '#FFF');
             var filename = path.resolve(exampleImageDir, 'example-shape-' + theme + '.svg');
-            fs.writeFile(filename, svg, callback);
+            writexml(filename, 'svg', svg, callback);
         }, callback);
     },
     function renderPng(callback) {
