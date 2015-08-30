@@ -175,3 +175,8 @@ thead td {
 p {
     padding: 4px 8px;
 }
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
