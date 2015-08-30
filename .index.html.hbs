@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng:app="FontThemeApp" ng:controller="FontThemCtrl">
+<head>
+    <meta charset="UTF-8"/>
+    <title>{{pkg.name}}</title>
+    <link rel="stylesheet" href="./assets/stylesheets/gallery.css"/>
+    <link rel="icon" href="./assets/images/fur-favicon.png"/>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 onclick="location.reload()">{{pkg.name}}</h1>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="width:90px;"/>
+                <col style="width:120px;"/>
+                <col/>
+            </colgroup>
+            <thead>
+            <tr>
+                <th>Theme</th>
+                <th>Sample</th>
+            </tr>
+            <tbody>
+            {{#each examples}}
+                <tr>
+                    <th>{{theme}}</th>
+                    <td>
+                        <img src="./docs/examples/images/example-shape-{{theme}}.png?v={{../pkg.version}}" height="62">
+                    </td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</main>
+<footer>
+    <a href="https://github.com/tick-tack/fur"><img src="./assets/images/fur-banner.png" class="footer-logo"></a>
+    <small>© 2014 Taka Okunishi</small>
+
+    <a id="jump-to-top-btn" href="#">⇧Jump to Top</a>
+    <nav>
+        <a class="nav-item" href="https://github.com/fur-repo/fur/">Homepage</a>
+        <a class="nav-item" href="http://fur-repo/fur/apiguide/">API Guide</a>
+    </nav>
+</footer>
+</body>
+</html>

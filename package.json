@@ -1,6 +1,6 @@
 {
   "name": "fur-shapes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Shapes for fur.",
   "main": "lib",
   "scripts": {

@@ -1,0 +1,22 @@
+/**
+ * Bud file for index.html
+ */
+
+"use strict";
+
+var furShapes = require('./lib');
+
+module.exports = {
+    force: true,
+    mode: '444',
+    data: {
+        pkg: require('./package.json'),
+        get examples() {
+            return Object.keys(furShapes).map(function (theme) {
+                return {
+                    theme: theme
+                };
+            })
+        }
+    }
+};

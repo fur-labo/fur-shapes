@@ -9,7 +9,7 @@ var cozTmpl = require('coz-tmpl'),
 
 module.exports = cozTmpl.indexJsBud({
     module: pkg.name,
-    description: pkg.description,
+    desc: pkg.description,
     dirname: __dirname
 });
 

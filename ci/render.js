@@ -23,7 +23,7 @@ apeTasking.runTasks([
     function renderSvg(callback) {
         var themes = require('../lib/.themes.json');
         async.eachSeries(themes, function (theme, callback) {
-            var svg = furShapes[theme](512, 256, '#38E');
+            var svg = furShapes[theme](512, 256, '#38E', '#FFF');
             var filename = path.resolve(exampleImageDir, 'example-shape-' + theme + '.svg');
             fs.writeFile(filename, svg, callback);
         }, callback);
