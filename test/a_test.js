@@ -7,6 +7,7 @@
 const a = require('../lib/a.js')
 const mkdirp = require('mkdirp')
 const fs = require('fs')
+const assert = require('assert')
 
 const tmpDir = __dirname + '/../tmp'
 

@@ -2,23 +2,23 @@
  * Bud file for index.html
  */
 
-"use strict";
+'use strict';
 
-var furShapes = require('./lib');
+let furShapes = require('./lib')
 
 module.exports = {
-    force: true,
-    mode: '444',
-    data: {
-        pkg: require('./package.json'),
-        get examples() {
-            return Object.keys(furShapes).map(function (theme) {
-                var shape = furShapes[theme];
-                return {
-                    theme: theme,
-                    reversed: shape.$reversed
-                };
-            })
-        }
+  force: true,
+  mode: '444',
+  data: {
+    pkg: require('./package.json'),
+    get examples () {
+      return Object.keys(furShapes).map((theme) => {
+        var shape = furShapes[ theme ];
+        return {
+          theme: theme,
+          reversed: shape.$reversed
+        };
+      })
     }
+  }
 };

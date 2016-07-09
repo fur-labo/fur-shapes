@@ -11,7 +11,7 @@ const assert = require('assert')
 
 let tmpDir = __dirname + '/../tmp'
 
-descibe('b', function () {
+describe('b', function () {
   before((done) => {
     mkdirp.sync(tmpDir)
     done()
