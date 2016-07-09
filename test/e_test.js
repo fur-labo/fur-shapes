@@ -1,27 +1,28 @@
 /**
  * Test case for e.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var e = require('../lib/e.js'),
-    mkdirp = require('mkdirp'),
-    fs = require('fs');
+const e = require('../lib/e.js')
+const mkdirp = require('mkdirp')
+const fs = require('fs')
+const assert = require('assert')
 
-var tmpDir = __dirname + '/../tmp';
-exports.setUp = function (done) {
-    mkdirp.sync(tmpDir);
-    done();
-};
+let tmpDir = __dirname + '/../tmp'
+describe('e', function () {
+  before((done) => {
+    mkdirp.sync(tmpDir)
+    done()
+  })
 
-exports.tearDown = function(done) {
-    done();
-};
+  it('E', (done) => {
+    let svg = e(512, 256, '#38E')
+    fs.writeFile(tmpDir + '/testing-e.svg', svg, (err) => {
+      assert.ifError(err)
+      done()
+    })
+  })
+})
 
-exports['E'] = function(test){
-    var svg = e(512, 256, '#38E');
-    fs.writeFile(tmpDir + '/testing-e.svg', svg, function (err) {
-        test.ifError(err);
-        test.done();
-    });
-};
-
+/* global describe, before, after, it */

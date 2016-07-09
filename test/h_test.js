@@ -1,20 +1,27 @@
 /**
  * Test case for h.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var h = require('../lib/h.js');
+const h = require('../lib/h.js')
+const assert = require('assert')
+const co = require('co')
 
-exports.setUp = function(done) {
-    done();
-};
+describe('h', function () {
+  this.timeout(3000)
 
-exports.tearDown = function(done) {
-    done();
-};
+  before(() => co(function * () {
 
-exports['H'] = function(test){
+  }))
 
-    test.done();
-};
+  after(() => co(function * () {
 
+  }))
+
+  it('H', () => co(function * () {
+
+  }))
+})
+
+/* global describe, before, after, it */

@@ -1,20 +1,27 @@
 /**
  * Test case for g.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var g = require('../lib/g.js');
+const g = require('../lib/g.js')
+const assert = require('assert')
+const co = require('co')
 
-exports.setUp = function(done) {
-    done();
-};
+describe('g', function () {
+  this.timeout(3000)
 
-exports.tearDown = function(done) {
-    done();
-};
+  before(() => co(function * () {
 
-exports['G'] = function(test){
+  }))
 
-    test.done();
-};
+  after(() => co(function * () {
 
+  }))
+
+  it('G', () => co(function * () {
+
+  }))
+})
+
+/* global describe, before, after, it */

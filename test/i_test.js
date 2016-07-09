@@ -1,20 +1,27 @@
 /**
  * Test case for i.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var i = require('../lib/i.js');
+const i = require('../lib/i.js')
+const assert = require('assert')
+const co = require('co')
 
-exports.setUp = function(done) {
-    done();
-};
+describe('i', function () {
+  this.timeout(3000)
 
-exports.tearDown = function(done) {
-    done();
-};
+  before(() => co(function * () {
 
-exports['I'] = function(test){
+  }))
 
-    test.done();
-};
+  after(() => co(function * () {
 
+  }))
+
+  it('I', () => co(function * () {
+
+  }))
+})
+
+/* global describe, before, after, it */

@@ -1,7 +1,5 @@
 /**
  * Define theme "{{theme}}".
- * @memberof module:fur-shapes/lib
- * @memberof module:fur-shapes/lib
  * @function {{theme}}
  * @param {number} width - Image width
  * @param {number} height - Image height
@@ -10,16 +8,15 @@
  * @returns {string} - SVG string.
  */
 
-var _svg = require('./_svg');
+const _svg = require('./_svg')
 
 /** @lends {{theme}} */
-function {{theme}}(width, height, color1, color2) {
+function {{theme}} (width, height, color1, color2) {
+  return _svg(width, height, {
 
-    return _svg(width, height, {
-
-    });
+  });
 }
 
-{{theme}}.$reversed = false;
+{{theme}}.$reversed = false
 
-module.exports = {{theme}};
+module.exports = {{theme}}

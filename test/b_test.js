@@ -1,28 +1,33 @@
 /**
  * Test case for b.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+'use strict'
 
-var b = require('../lib/b.js'),
-    mkdirp = require('mkdirp'),
-    fs = require('fs');
+const b = require('../lib/b.js')
+const mkdirp = require('mkdirp')
+const fs = require('fs')
+const assert = require('assert')
 
-var tmpDir = __dirname + '/../tmp';
+let tmpDir = __dirname + '/../tmp'
 
-exports.setUp = function (done) {
-    mkdirp.sync(tmpDir);
-    done();
-};
+descibe('b', function () {
+  before((done) => {
+    mkdirp.sync(tmpDir)
+    done()
+  })
 
-exports.tearDown = function (done) {
-    done();
-};
+  after((done) => {
+    done()
+  })
 
-exports['B'] = function (test) {
-    var svg = b(512, 256, '#38E');
-    fs.writeFile(tmpDir + '/testing-b.svg', svg, function (err) {
-        test.ifError(err);
-        test.done();
-    });
-};
+  it('B', (done) => {
+    let svg = b(512, 256, '#38E')
+    fs.writeFile(tmpDir + '/testing-b.svg', svg, (err) => {
+      assert.ifError(err)
+      done()
+    })
+  })
+})
 
+/* global describe, before, after, it */

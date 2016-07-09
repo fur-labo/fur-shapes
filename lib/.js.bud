@@ -2,21 +2,21 @@
  * Bud file for themes.
  */
 
-"use strict";
+'use strict'
 
-var themes = require('./.themes.json');
+const themes = require('./.themes.json')
 
-module.exports = themes.map(function (theme) {
-    return {
-        force: false,
-        mode: '644',
-        path: theme + '.js',
-        data: {
-            theme:theme
-        }
+module.exports = themes.map((theme) => {
+  return {
+    force: false,
+    mode: '644',
+    path: theme + '.js',
+    data: {
+      theme
     }
-});
+  }
+})
 
 if (!module.parent) {
-    require('coz').render(__filename);
+  require('coz').render(__filename);
 }
