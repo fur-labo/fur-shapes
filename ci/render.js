@@ -7,8 +7,7 @@
 'use strict'
 
 const path = require('path')
-const async = require('async')
-const fs = require('fs')
+const asleep = require('asleep')
 const apeTasking = require('ape-tasking')
 const expandglob = require('expandglob')
 const writexml = require('writexml')
@@ -31,14 +30,13 @@ apeTasking.runTasks([
   },
   async function renderPng () {
     const filenames = await expandglob('*.svg', {cwd: exampleImageDir})
-    const config = filenames.map((filename) => {
+    for (const filename of filenames) {
       const name = path.basename(filename, '.svg')
-      return {
-        src: path.resolve(exampleImageDir, name + '.svg'),
-        dest: path.resolve(exampleImageDir, name + '.png'),
+      const src = path.resolve(exampleImageDir, name + '.svg')
+      const dest = path.resolve(exampleImageDir, name + '.png')
+      await svgpng(src, dest, {
         size: {width: 512, height: 256}
-      }
-    })
-    await svgpng.byConf(config)
+      })
+    }
   }
-], true)
+], false)
