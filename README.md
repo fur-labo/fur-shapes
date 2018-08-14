@@ -98,16 +98,16 @@ See [fur-shapes-gallery](http://fur-repo.github.io/fur-shapes/)
 
 | Theme | Image | Signature |
 | :---: | ----- | --------- |
-| **a** | <img src="./example/images/example-shape-a.png?v=2.1.1" height="62"> | `furShapes.a(256,256, #38E)` |
-| **b** | <img src="./example/images/example-shape-b.png?v=2.1.1" height="62"> | `furShapes.b(256,256, #38E)` |
-| **c** | <img src="./example/images/example-shape-c.png?v=2.1.1" height="62"> | `furShapes.c(256,256, #38E)` |
-| **d** | <img src="./example/images/example-shape-d.png?v=2.1.1" height="62"> | `furShapes.d(256,256, #38E)` |
-| **e** | <img src="./example/images/example-shape-e.png?v=2.1.1" height="62"> | `furShapes.e(256,256, #38E)` |
-| **f** | <img src="./example/images/example-shape-f.png?v=2.1.1" height="62"> | `furShapes.f(256,256, #38E)` |
-| **g** | <img src="./example/images/example-shape-g.png?v=2.1.1" height="62"> | `furShapes.g(256,256, #38E)` |
-| **h** | <img src="./example/images/example-shape-h.png?v=2.1.1" height="62"> | `furShapes.h(256,256, #38E)` |
-| **i** | <img src="./example/images/example-shape-i.png?v=2.1.1" height="62"> | `furShapes.i(256,256, #38E)` |
-| **j** | <img src="./example/images/example-shape-j.png?v=2.1.1" height="62"> | `furShapes.j(256,256, #38E)` |
+| **a** | <img src="./example/images/example-shape-a.png?v=2.1.2" height="62"> | `furShapes.a(256,256, #38E)` |
+| **b** | <img src="./example/images/example-shape-b.png?v=2.1.2" height="62"> | `furShapes.b(256,256, #38E)` |
+| **c** | <img src="./example/images/example-shape-c.png?v=2.1.2" height="62"> | `furShapes.c(256,256, #38E)` |
+| **d** | <img src="./example/images/example-shape-d.png?v=2.1.2" height="62"> | `furShapes.d(256,256, #38E)` |
+| **e** | <img src="./example/images/example-shape-e.png?v=2.1.2" height="62"> | `furShapes.e(256,256, #38E)` |
+| **f** | <img src="./example/images/example-shape-f.png?v=2.1.2" height="62"> | `furShapes.f(256,256, #38E)` |
+| **g** | <img src="./example/images/example-shape-g.png?v=2.1.2" height="62"> | `furShapes.g(256,256, #38E)` |
+| **h** | <img src="./example/images/example-shape-h.png?v=2.1.2" height="62"> | `furShapes.h(256,256, #38E)` |
+| **i** | <img src="./example/images/example-shape-i.png?v=2.1.2" height="62"> | `furShapes.i(256,256, #38E)` |
+| **j** | <img src="./example/images/example-shape-j.png?v=2.1.2" height="62"> | `furShapes.j(256,256, #38E)` |
 
 
 <!-- Section from "doc/guides/03.Examples.md.hbs" End -->
